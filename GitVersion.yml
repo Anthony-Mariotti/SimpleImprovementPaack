@@ -1,11 +1,9 @@
-mode: ContinuousDeployment
+mode: ContinuousDelivery
 branches:
-  develop:
-    tag: ALPHA
-  feature:
-    tag: FEATURE
-  hotfix:
-    tag: HOTFIX
+  main:
+    regex: ^master$|^main$
+    increment: Patch
+    is-mainline: true
 ignore:
   sha: []
 merge-message-formats: {}
