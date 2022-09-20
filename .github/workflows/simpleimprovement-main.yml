@@ -51,7 +51,7 @@ jobs:
           prerelease: false
           name: ${{ env.GitVersion_SemVer }}
           tag_name: ${{ env.GitVersion_SemVer }}
-          target_commitish: develop
+          target_commitish: main
           files: |
             build/SimpleImprovement-MultiMC-${{ env.GitVersion_SemVer }}.zip
           generate_release_notes: true
