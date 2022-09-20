@@ -45,6 +45,11 @@ jobs:
         env:
           PACK_VERSION: ${{ env.GitVersion_SemVer }}
 
+     - name: Generate Server Pack
+        run: sh ./.github/scripts/build-server.sh -g
+        env:
+          PACK_VERSION: ${{ env.GitVersion_SemVer }}
+
       - name: Publish Release
         uses: softprops/action-gh-release@v1
         with:
@@ -54,4 +59,5 @@ jobs:
           target_commitish: main
           files: |
             build/SimpleImprovement-MultiMC-${{ env.GitVersion_SemVer }}.zip
+            build/SimpleImprovement-Server-${{ env.GitVersion_SemVer }}.zip
           generate_release_notes: true
