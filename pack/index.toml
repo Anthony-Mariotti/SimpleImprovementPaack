@@ -1,6 +1,62 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/Adorn.json5"
+hash = "307414275390a02051b42622dbfcd04f40eda0cdd885b64f5a9180bb852bca5a"
+
+[[files]]
+file = "config/appleskin.json5"
+hash = "ae87f2d1b38dfd4b1e0767dfeb539261deaaf4fd2eb73692afcbaac7147855b9"
+
+[[files]]
+file = "config/c2me.toml"
+hash = "8410dc9daa2d103e0bb44fb2c23552ef744f8216b3137d1b57bd2e4c7441ea6d"
+
+[[files]]
+file = "config/charm.toml"
+hash = "e906a9ac001358cf7962afae810996cc807be3c77b95b9d44bc5f4c50559b824"
+
+[[files]]
+file = "config/dashloader.json"
+hash = "4f76f70f4a970bbcd62a2986644e0a342f3a09f2472476a9b6bb79dea9e722b7"
+
+[[files]]
+file = "config/entityculling.json"
+hash = "0c78e42bc9ee8629e05830c89b882382dfa24c772c9b5a16d91225e1c63b11ad"
+
+[[files]]
+file = "config/midnightlib.json"
+hash = "6b52769b3358f87b591871a4444f3cef8124a9dced0da1755f18db2f47adf4f3"
+
+[[files]]
+file = "config/notenoughcrashes.json"
+hash = "8deed1a37e1d8b3741c5059ec8351ab8855ea44614ae22b2c377f9d3c7b34aaf"
+
+[[files]]
+file = "config/roughlyenoughitems/config.json5"
+hash = "058ce1fa6c4305dde28175fc9bcf95fae4e68c023ca71c612bd3c128678c692f"
+
+[[files]]
+file = "config/sleepwarp.properties"
+hash = "55c0f61d05ac9745e06a0b09aa38a7f5581ada1d733e5dbe950033637ce7b348"
+
+[[files]]
+file = "config/visualoverhaul.json"
+hash = "0c97aa1c10b902568c50580397a15ba606e51c808a65132d96f97f1d9750d4ee"
+
+[[files]]
+file = "config/waila/blacklist.json"
+hash = "640800920130d084dec5a3a7f52c10e18d72ed7faca522b5bcb6bb46d0dcae9b"
+
+[[files]]
+file = "config/waila/waila.json"
+hash = "e249c1997510a740a22edf6df4ec9bcc11aa8677e06005d66bac87767d3fbcb8"
+
+[[files]]
+file = "config/waila/waila_plugins.json"
+hash = "1bafd85c9972ef2d7e7a68ceb60609f6cf9accb2170681a34f9773cb18469b56"
+
+[[files]]
 file = "mods/adorn.pw.toml"
 hash = "37a77653eb9db0572dbb4760a6817c64036d9ff68bc5ce0aa6bbb81010fe7a7a"
 metafile = true
@@ -18,6 +74,11 @@ metafile = true
 [[files]]
 file = "mods/appleskin.pw.toml"
 hash = "4d571d5ebe245ffb62a0df83e81d1c03670807d3528650d6dd9c983bd26ae860"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "0e2d483c68ae1ecdf79bcafae505809ae7651bec2db5baf7af12539d2081be71"
 metafile = true
 
 [[files]]
