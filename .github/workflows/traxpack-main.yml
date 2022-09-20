@@ -1,0 +1,59 @@
+name: Trax Pack Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    name: Generate Trax Pack
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v0.9.13
+        with:
+          versionSpec: '5.x'
+
+      - name: Determine Version
+        id: version
+        uses: gittools/actions/gitversion/execute@v0.9.13
+
+      - name: Setup GO Language
+        uses: actions/setup-go@v3
+        with:
+          go-version: '^1.19' 
+      
+      - name: Install PackWiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      # Unable to dynamically replace items for packwiz at this time
+      # - name: Replace Version Tag
+      #   uses: jacobtomlinson/gha-find-replace@v2
+      #   with:
+      #     find: "{{ TTP.VERSION }}"
+      #     replace: "${{ env.GitVersion_SemVer }}"
+
+      - name: Generate MultiMC Instance
+        run: sh ./.github/scripts/build-multimc.sh -g
+        env:
+          PACK_VERSION: ${{ env.GitVersion_SemVer }}
+
+      - name: Publish Release
+        uses: softprops/action-gh-release@v1
+        with:
+          prerelease: false
+          name: ${{ env.GitVersion_SemVer }}
+          tag_name: ${{ env.GitVersion_SemVer }}
+          target_commitish: develop
+          files: |
+            build/TheTraxPack-${{ env.GitVersion_SemVer }}.mrpack
+            build/TheTraxPack-MultiMC-${{ env.GitVersion_SemVer }}.zip
+            build/TheTraxPack-Server-${{ env.GitVersion_SemVer }}.zip
+          generate_release_notes: true

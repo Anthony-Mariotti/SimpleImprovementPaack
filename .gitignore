@@ -1,0 +1,43 @@
+# Exclude any zip files
+*.zip
+
+# Exclude exported Modrinth modpacks
+*.mrpack
+
+# Exclude Build
+build/
+
+# Pack Exclusions
+pack/**/cache.*
+pack/kubejs/README*
+pack/**/journeymap-server.*
+pack/journeymap/icon/theme/flat/
+pack/journeymap/server/
+pack/journeymap/colorpalette*
+pack/journeymap/journeymap.log
+pack/journeymap/data/
+
+# Server Exclusions
+server/.fabric
+server/config
+server/defaultconfigs
+server/journeymap
+server/kubejs
+server/libraries
+server/logs
+server/moddata
+server/mods
+server/not-enough-crashes
+server/paintings
+server/patchouli_books
+server/versions
+server/world
+server/banned-*
+server/eula*
+server/*.log
+server/ops.json
+server/packwiz-installer.jar
+server/packwiz.json
+server/rhino.*
+server/usercache.json
+server/whitelist.json

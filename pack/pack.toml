@@ -1,0 +1,13 @@
+name = "Simple Improvement"
+author = "AMTraxTGE"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "b409db1166e032337647be7036d2dab732f78e74c5ba2bad6b80e14efb0b0365"
+
+[versions]
+fabric = "0.14.9"
+minecraft = "1.19"

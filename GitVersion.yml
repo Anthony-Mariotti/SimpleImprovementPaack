@@ -1,0 +1,11 @@
+mode: ContinuousDeployment
+branches:
+  develop:
+    tag: ALPHA
+  feature:
+    tag: FEATURE
+  hotfix:
+    tag: HOTFIX
+ignore:
+  sha: []
+merge-message-formats: {}
