@@ -53,7 +53,5 @@ jobs:
           tag_name: ${{ env.GitVersion_SemVer }}
           target_commitish: develop
           files: |
-            build/TheTraxPack-${{ env.GitVersion_SemVer }}.mrpack
-            build/TheTraxPack-MultiMC-${{ env.GitVersion_SemVer }}.zip
-            build/TheTraxPack-Server-${{ env.GitVersion_SemVer }}.zip
+            build/SimpleImprovement-MultiMC-${{ env.GitVersion_SemVer }}.zip
           generate_release_notes: true
