@@ -1,4 +1,4 @@
-mode: ContinuousDelivery
+mode: MainLine
 branches:
   main:
     regex: ^master$|^main$
