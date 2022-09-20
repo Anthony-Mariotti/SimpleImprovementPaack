@@ -157,6 +157,11 @@ hash = "eefcd81493fa26fa8135cf85495cbfb52127aa43667c5a4faea27d16d7bb2191"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "a348ec1aec5a10f7235d6741e08aea583e042049eded3d6eafd97a0688a891c0"
+metafile = true
+
+[[files]]
 file = "mods/journeymap.pw.toml"
 hash = "e47deab6f9e0ee7aacf07e85e6a16a44cac75c8b13b779508534a25589add192"
 metafile = true
